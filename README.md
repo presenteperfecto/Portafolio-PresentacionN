@@ -31,6 +31,7 @@ portfolio-nahuel-vega/
 │   ├── icons/
 │   │   └── favicon.svg         # Isotipo NV en vector
 │   ├── images/
+│   │   ├── nahuel-perfil.png   # Foto de perfil oficial en la sección Sobre mí
 │   │   └── og-image.svg        # Portada para compartir en redes sociales (1200x630)
 │   └── projects/
 │       ├── vegna-preview.svg   # Mockup UI Tienda VEGNA

@@ -294,7 +294,32 @@
     <!-- ============================================ -->
     <section class="section about" id="sobre-mi">
       <div class="container">
-        <div class="about__inner">
+        <div class="about__grid">
+          <!-- Columna 1: Tarjeta con foto de perfil -->
+          <div class="about__profile-card" data-animate>
+            <div class="about__photo-wrapper">
+              <img 
+                src="assets/images/nahuel-perfil.png" 
+                alt="Nahuel Vega — Desarrollador Web" 
+                class="about__photo"
+                loading="lazy"
+              >
+              <div class="about__status-badge">
+                <span class="about__status-dot"></span>
+                <span>Disponible para proyectos</span>
+              </div>
+            </div>
+            <div class="about__profile-meta">
+              <h3 class="about__profile-name">Nahuel Vega</h3>
+              <p class="about__profile-role">Desarrollador Web &amp; Estudiante de Analista en Sistemas</p>
+              <div class="about__profile-tags">
+                <span class="about__profile-tag">Frontend &amp; Backend</span>
+                <span class="about__profile-tag">Soluciones Comerciales</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna 2: Presentación profesional -->
           <div class="about__content" data-animate>
             <span class="section__tag">Sobre mí</span>
             <h2 class="about__title">Detrás de cada proyecto, hay una solución pensada para cada negocio.</h2>
@@ -305,36 +330,50 @@
               <p>Mi objetivo es ayudar a los comercios a fortalecer su presencia digital mediante soluciones prácticas, adaptables y preparadas para crecer.</p>
             </div>
           </div>
-          <div class="about__skills" data-animate>
+        </div>
+
+        <!-- Fila inferior: Tecnologías y herramientas -->
+        <div class="about__skills-section" data-animate>
+          <div class="about__skills-header">
             <h3 class="about__skills-title">Tecnologías y herramientas</h3>
-            <div class="skills__grid">
-              <div class="skill-item">
-                <span class="skill-item__name">HTML5</span>
-              </div>
-              <div class="skill-item">
-                <span class="skill-item__name">CSS3</span>
-              </div>
-              <div class="skill-item">
-                <span class="skill-item__name">JavaScript</span>
-              </div>
-              <div class="skill-item">
-                <span class="skill-item__name">Node.js</span>
-              </div>
-              <div class="skill-item">
-                <span class="skill-item__name">Express</span>
-              </div>
-              <div class="skill-item">
-                <span class="skill-item__name">MySQL</span>
-              </div>
-              <div class="skill-item">
-                <span class="skill-item__name">Git</span>
-              </div>
-              <div class="skill-item">
-                <span class="skill-item__name">Responsive Design</span>
-              </div>
-              <div class="skill-item">
-                <span class="skill-item__name">Servidores & Deploy</span>
-              </div>
+            <p class="about__skills-subtitle">Stack de desarrollo aplicado a proyectos comerciales reales</p>
+          </div>
+          <div class="skills__grid">
+            <div class="skill-item">
+              <span class="skill-item__badge">&lt;/&gt;</span>
+              <span class="skill-item__name">HTML5</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__badge">#</span>
+              <span class="skill-item__name">CSS3</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__badge">{ }</span>
+              <span class="skill-item__name">JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__badge">⚡</span>
+              <span class="skill-item__name">Node.js</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__badge">⚙</span>
+              <span class="skill-item__name">Express</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__badge">🗄</span>
+              <span class="skill-item__name">MySQL</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__badge">⑂</span>
+              <span class="skill-item__name">Git</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__badge">📱</span>
+              <span class="skill-item__name">Responsive Design</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__badge">☁</span>
+              <span class="skill-item__name">Servidores &amp; Deploy</span>
             </div>
           </div>
         </div>

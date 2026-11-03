@@ -95,7 +95,7 @@ const CONFIG = {
     vegnaPreview: 'assets/projects/vegna-preview.svg',
     fortunatoPreview: 'assets/projects/fortunato-preview.svg',
     parrillaPreview: 'assets/projects/parrilla-preview.svg',
-    profilePhoto: 'assets/images/profile.webp',       // Foto de perfil (opcional)
+    profilePhoto: 'assets/images/nahuel-perfil.png',  // Foto de perfil oficial
     ogImage: 'assets/images/og-image.svg',            // Imagen para redes sociales (1200x630px)
   },
 
