@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="fortunatoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181316"/>
+      <stop offset="100%" stop-color="#0a0809"/>
+    </linearGradient>
+    <linearGradient id="berryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b8b"/>
+      <stop offset="100%" stop-color="#e83e68"/>
+    </linearGradient>
+    <linearGradient id="mintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3dd598"/>
+      <stop offset="100%" stop-color="#1fb87c"/>
+    </linearGradient>
+    <filter id="fShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#fortunatoBg)"/>
+  
+  <!-- Subtle Circles -->
+  <circle cx="720" cy="80" r="140" fill="#e83e68" opacity="0.04" filter="blur(40px)"/>
+  <circle cx="80" cy="420" r="160" fill="#ffb84d" opacity="0.03" filter="blur(40px)"/>
+
+  <!-- Browser Window Wrapper -->
+  <g transform="translate(40, 30)" filter="url(#fShadow)">
+    <rect width="720" height="440" rx="10" fill="#171518" stroke="#2e272c" stroke-width="1.5"/>
+    <!-- Chrome Bar -->
+    <rect width="720" height="38" rx="10" fill="#201c22"/>
+    <circle cx="20" cy="19" r="5" fill="#ff5f56"/>
+    <circle cx="36" cy="19" r="5" fill="#ffbd2e"/>
+    <circle cx="52" cy="19" r="5" fill="#27c93f"/>
+    <!-- URL Bar -->
+    <rect x="160" y="8" width="400" height="22" rx="6" fill="#120f13" stroke="#332a32" stroke-width="1"/>
+    <text x="360" y="23" fill="#9f929d" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">fortunato2-0.web.app — Pedidos Online</text>
+
+    <!-- Header Inside -->
+    <g transform="translate(0, 38)">
+      <rect width="720" height="46" fill="#1a171d" stroke="#28222a" stroke-width="1"/>
+      <!-- Brand Logo -->
+      <path d="M26 18 C26 12 38 12 38 18 C38 21 32 23 32 26 L32 30" fill="none" stroke="#ff7395" stroke-width="2.2" stroke-linecap="round"/>
+      <text x="48" y="29" fill="#ffffff" font-family="'Sora', sans-serif" font-weight="700" font-size="15" letter-spacing="1">FORTUNATO</text>
+      <text x="160" y="28" fill="#e83e68" font-family="'Inter', sans-serif" font-size="10" font-weight="600" letter-spacing="1.5">HELADOS ARTESANALES</text>
+
+      <!-- Sucursal Selector -->
+      <rect x="420" y="10" width="150" height="26" rx="13" fill="#241e26" stroke="#3d3340" stroke-width="1"/>
+      <circle cx="433" cy="23" r="4" fill="#3dd598"/>
+      <text x="444" y="27" fill="#ffffff" font-family="'Inter', sans-serif" font-size="10">Sucursal Belgrano</text>
+
+      <!-- Cart indicator -->
+      <rect x="585" y="10" width="110" height="26" rx="13" fill="url(#berryGrad)"/>
+      <text x="640" y="27" fill="#ffffff" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">PEDIDO ($ 14.800)</text>
+    </g>
+
+    <!-- Main Content: Left Column (Flavor & Size Picker) + Right Column (Order Summary & WhatsApp) -->
+    <!-- Left Column (460px width) -->
+    <g transform="translate(24, 98)">
+      <!-- Delivery / Takeaway toggle -->
+      <rect width="450" height="34" rx="8" fill="#131114" stroke="#2a232b" stroke-width="1"/>
+      <rect x="4" y="4" width="220" height="26" rx="6" fill="#2d222b"/>
+      <text x="114" y="21" fill="#ff7395" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">🛵 Envío a Domicilio</text>
+      <text x="335" y="21" fill="#7d727b" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">🛍️ Retiro en Local</text>
+
+      <!-- Size Selector -->
+      <g transform="translate(0, 46)">
+        <text x="0" y="12" fill="#ffffff" font-family="'Sora', sans-serif" font-size="12" font-weight="700">1. Seleccioná el tamaño:</text>
+        <g transform="translate(0, 22)">
+          <!-- 1/4 kg -->
+          <rect x="0" y="0" width="105" height="42" rx="6" fill="#1b171e" stroke="#2e2732" stroke-width="1"/>
+          <text x="52" y="18" fill="#999" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">1/4 Kilo</text>
+          <text x="52" y="32" fill="#fff" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">$ 4.200</text>
+
+          <!-- 1/2 kg -->
+          <rect x="115" y="0" width="105" height="42" rx="6" fill="#1b171e" stroke="#2e2732" stroke-width="1"/>
+          <text x="167" y="18" fill="#999" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">1/2 Kilo</text>
+          <text x="167" y="32" fill="#fff" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">$ 7.800</text>
+
+          <!-- 1 kg (Selected) -->
+          <rect x="230" y="0" width="105" height="42" rx="6" fill="#2e1d28" stroke="#ff7395" stroke-width="1.5"/>
+          <text x="282" y="18" fill="#ff7395" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">1 Kilo (Activo)</text>
+          <text x="282" y="32" fill="#ffffff" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">$ 14.800</text>
+
+          <!-- Pote Termico -->
+          <rect x="345" y="0" width="105" height="42" rx="6" fill="#1b171e" stroke="#2e2732" stroke-width="1"/>
+          <text x="397" y="18" fill="#999" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Cucuruchos x6</text>
+          <text x="397" y="32" fill="#fff" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">$ 2.000</text>
+        </g>
+      </g>
+
+      <!-- Flavors list with counter -->
+      <g transform="translate(0, 126)">
+        <text x="0" y="12" fill="#ffffff" font-family="'Sora', sans-serif" font-size="12" font-weight="700">2. Elegí hasta 4 sabores:</text>
+        <rect x="345" y="0" width="105" height="18" rx="9" fill="#2c1e28"/>
+        <text x="397" y="13" fill="#ff7395" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">3 / 4 seleccionados</text>
+
+        <!-- Flavor items -->
+        <!-- Flavor 1 -->
+        <g transform="translate(0, 24)">
+          <rect width="450" height="38" rx="6" fill="#19161c" stroke="#2b232e" stroke-width="1"/>
+          <circle cx="20" cy="19" r="7" fill="#8c5835"/>
+          <text x="38" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Dulce de Leche Granizado Fortunato</text>
+          <text x="38" y="30" fill="#7c707d" font-family="'Inter', sans-serif" font-size="9">Elaboración tradicional con chocolate amargo sembrado</text>
+          <!-- Count -->
+          <rect x="375" y="8" width="62" height="22" rx="4" fill="#291a24" stroke="#ff7395" stroke-width="1"/>
+          <text x="406" y="23" fill="#ff7395" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">✓ ELEGIDO</text>
+        </g>
+
+        <!-- Flavor 2 -->
+        <g transform="translate(0, 68)">
+          <rect width="450" height="38" rx="6" fill="#19161c" stroke="#2b232e" stroke-width="1"/>
+          <circle cx="20" cy="19" r="7" fill="#d83a56"/>
+          <text x="38" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Frutos del Bosque de la Patagonia</text>
+          <text x="38" y="30" fill="#7c707d" font-family="'Inter', sans-serif" font-size="9">Frambuesas, moras y arándanos frescos al agua</text>
+          <rect x="375" y="8" width="62" height="22" rx="4" fill="#291a24" stroke="#ff7395" stroke-width="1"/>
+          <text x="406" y="23" fill="#ff7395" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">✓ ELEGIDO</text>
+        </g>
+
+        <!-- Flavor 3 -->
+        <g transform="translate(0, 112)">
+          <rect width="450" height="38" rx="6" fill="#19161c" stroke="#2b232e" stroke-width="1"/>
+          <circle cx="20" cy="19" r="7" fill="#422e23"/>
+          <text x="38" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Chocolate Amargo 70% con Almendras</text>
+          <text x="38" y="30" fill="#7c707d" font-family="'Inter', sans-serif" font-size="9">Cacao ecuatoriano y frutos secos tostados</text>
+          <rect x="375" y="8" width="62" height="22" rx="4" fill="#291a24" stroke="#ff7395" stroke-width="1"/>
+          <text x="406" y="23" fill="#ff7395" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">✓ ELEGIDO</text>
+        </g>
+
+        <!-- Flavor 4 (Available) -->
+        <g transform="translate(0, 156)">
+          <rect width="450" height="38" rx="6" fill="#151218" stroke="#261f28" stroke-width="1"/>
+          <circle cx="20" cy="19" r="7" fill="#9dbf67"/>
+          <text x="38" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Pistacho Siciliano Bronte</text>
+          <text x="38" y="30" fill="#7c707d" font-family="'Inter', sans-serif" font-size="9">Pistachos 100% puros importados</text>
+          <rect x="385" y="8" width="52" height="22" rx="4" fill="#241e26" stroke="#443948" stroke-width="1"/>
+          <text x="411" y="23" fill="#aaa" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">+ AGREGAR</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Right Column (Cart & WhatsApp Integration, 200px width) -->
+    <g transform="translate(490, 98)">
+      <rect width="206" height="325" rx="8" fill="#1b171e" stroke="#332a35" stroke-width="1"/>
+      <text x="16" y="24" fill="#ffffff" font-family="'Sora', sans-serif" font-size="12" font-weight="700">Resumen del Pedido</text>
+
+      <!-- Cart Item -->
+      <g transform="translate(14, 38)">
+        <rect width="178" height="65" rx="5" fill="#151218" stroke="#2a232b" stroke-width="1"/>
+        <text x="10" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="10" font-weight="600">1x Pote 1 Kilo</text>
+        <text x="168" y="18" fill="#ff7395" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="end">$ 14.800</text>
+        <text x="10" y="34" fill="#888" font-family="'Inter', sans-serif" font-size="8.5">• DDL Granizado</text>
+        <text x="10" y="46" fill="#888" font-family="'Inter', sans-serif" font-size="8.5">• Frutos del Bosque</text>
+        <text x="10" y="58" fill="#888" font-family="'Inter', sans-serif" font-size="8.5">• Choco Amargo Almendras</text>
+      </g>
+
+      <!-- Client Details form preview -->
+      <g transform="translate(14, 115)">
+        <text x="0" y="10" fill="#999" font-family="'Inter', sans-serif" font-size="9" font-weight="600">DATOS DE ENTREGA</text>
+        <rect x="0" y="16" width="178" height="24" rx="4" fill="#131015" stroke="#2e2531" stroke-width="1"/>
+        <text x="10" y="32" fill="#ffffff" font-family="'Inter', sans-serif" font-size="9">Av. Cabildo 2450 4°B</text>
+        <rect x="0" y="46" width="178" height="24" rx="4" fill="#131015" stroke="#2e2531" stroke-width="1"/>
+        <text x="10" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="9">Pago en efectivo / Débito</text>
+      </g>
+
+      <!-- Total -->
+      <line x1="14" y1="205" x2="192" y2="205" stroke="#2a232b" stroke-width="1"/>
+      <text x="14" y="226" fill="#ffffff" font-family="'Inter', sans-serif" font-size="12" font-weight="700">Total a pagar</text>
+      <text x="192" y="226" fill="#3dd598" font-family="'Inter', sans-serif" font-size="14" font-weight="700" text-anchor="end">$ 14.800</text>
+
+      <!-- WhatsApp Dispatch Button -->
+      <g transform="translate(14, 245)">
+        <rect width="178" height="42" rx="6" fill="#25d366"/>
+        <path d="M22 21 L28 15 C26 13 25 10 27 7 C29 4 33 5 35 7 L37 10" fill="none" stroke="#fff" stroke-width="2"/>
+        <text x="89" y="26" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">ENVIAR A WHATSAPP</text>
+      </g>
+      <text x="103" y="306" fill="#777" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">Envío automático con formato estructurado</text>
+    </g>
+  </g>
+</svg>

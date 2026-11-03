@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgOg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="blueG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f8cff"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgOg)"/>
+
+  <!-- Subtle glow -->
+  <circle cx="1050" cy="150" r="300" fill="#4f8cff" opacity="0.08" filter="blur(80px)"/>
+  <circle cx="200" cy="500" r="250" fill="#2563eb" opacity="0.05" filter="blur(80px)"/>
+
+  <!-- Border -->
+  <rect x="20" y="20" width="1160" height="590" rx="20" fill="none" stroke="#262626" stroke-width="2"/>
+
+  <!-- Logo Pill -->
+  <g transform="translate(80, 80)">
+    <rect width="180" height="40" rx="20" fill="#1f1f1f" stroke="#333333" stroke-width="1"/>
+    <circle cx="24" cy="20" r="6" fill="#4f8cff"/>
+    <text x="38" y="25" fill="#ffffff" font-family="'Inter', sans-serif" font-size="14" font-weight="700" letter-spacing="1">NAHUEL VEGA</text>
+  </g>
+
+  <!-- Category Tag -->
+  <g transform="translate(80, 160)">
+    <text x="0" y="20" fill="#4f8cff" font-family="'Inter', sans-serif" font-size="16" font-weight="700" letter-spacing="3">DESARROLLO WEB PARA COMERCIOS &amp; NEGOCIOS</text>
+  </g>
+
+  <!-- Main Headline -->
+  <g transform="translate(80, 230)">
+    <text x="0" y="0" fill="#ffffff" font-family="'Sora', sans-serif" font-size="52" font-weight="700">Transformo ideas y negocios</text>
+    <text x="0" y="70" fill="#ffffff" font-family="'Sora', sans-serif" font-size="52" font-weight="700">en <tspan fill="#4f8cff">experiencias digitales.</tspan></text>
+  </g>
+
+  <!-- Subheadline -->
+  <g transform="translate(80, 360)">
+    <text x="0" y="0" fill="#999999" font-family="'Inter', sans-serif" font-size="20">Sitios web comerciales • Tiendas online • Sistemas de pedidos personalizados</text>
+  </g>
+
+  <!-- Project Badges -->
+  <g transform="translate(80, 440)">
+    <!-- Badge 1 -->
+    <rect x="0" y="0" width="220" height="52" rx="10" fill="#1c1c1c" stroke="#2e2e2e" stroke-width="1"/>
+    <circle cx="24" cy="26" r="6" fill="#d4af37"/>
+    <text x="40" y="32" fill="#ffffff" font-family="'Inter', sans-serif" font-size="14" font-weight="600">VEGNA Tienda</text>
+
+    <!-- Badge 2 -->
+    <rect x="240" y="0" width="240" height="52" rx="10" fill="#1c1c1c" stroke="#2e2e2e" stroke-width="1"/>
+    <circle cx="264" cy="26" r="6" fill="#e83e68"/>
+    <text x="280" y="32" fill="#ffffff" font-family="'Inter', sans-serif" font-size="14" font-weight="600">Heladería Fortunato</text>
+
+    <!-- Badge 3 -->
+    <rect x="500" y="0" width="230" height="52" rx="10" fill="#1c1c1c" stroke="#2e2e2e" stroke-width="1"/>
+    <circle cx="524" cy="26" r="6" fill="#f39c12"/>
+    <text x="540" y="32" fill="#ffffff" font-family="'Inter', sans-serif" font-size="14" font-weight="600">Parrilla José Luis</text>
+  </g>
+
+  <!-- Contact Footer in Card -->
+  <g transform="translate(80, 545)">
+    <text x="0" y="0" fill="#777777" font-family="'Inter', sans-serif" font-size="15">WhatsApp: +54 11 5870-8358  •  Email: anahuuelvega@gmail.com</text>
+  </g>
+</svg>

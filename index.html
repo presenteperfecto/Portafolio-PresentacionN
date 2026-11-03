@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Nahuel Vega — Desarrollo Web para Comercios y Negocios</title>
+  <meta name="description" content="Desarrollo sitios web, tiendas online y sistemas de pedidos personalizados para comercios. Soluciones digitales profesionales en Argentina.">
+  <meta name="keywords" content="desarrollo web, diseño web, tienda online, sistema de pedidos, páginas web para comercios, desarrollo web freelance, Argentina">
+  <meta name="author" content="Nahuel Vega">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nahuel Vega — Desarrollo Web para Comercios y Negocios">
+  <meta property="og:description" content="Desarrollo sitios web, tiendas online y sistemas de pedidos personalizados para comercios. Soluciones digitales profesionales en Argentina.">
+  <meta property="og:image" content="assets/images/og-image.svg">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nahuel Vega — Desarrollo Web para Comercios y Negocios">
+  <meta name="twitter:description" content="Desarrollo sitios web, tiendas online y sistemas de pedidos personalizados para comercios.">
+  <meta name="twitter:image" content="assets/images/og-image.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- HEADER / NAVEGACIÓN                          -->
+  <!-- ============================================ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__logo" aria-label="Inicio">
+        <span class="header__logo-name">NAHUEL VEGA</span>
+        <span class="header__logo-role">Desarrollo Web</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="btn btn--primary btn--sm header__cta">Solicitar presupuesto</a>
+
+      <button class="header__menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="menu-backdrop" id="menu-backdrop"></div>
+  <nav class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menú de navegación">
+    <div class="mobile-menu__header">
+      <span class="mobile-menu__title">Menú</span>
+      <button class="mobile-menu__close" id="menu-close" aria-label="Cerrar menú">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mobile-menu__body">
+      <a href="#inicio" class="mobile-nav-link">Inicio</a>
+      <a href="#servicios" class="mobile-nav-link">Servicios</a>
+      <a href="#proyectos" class="mobile-nav-link">Proyectos</a>
+      <a href="#sobre-mi" class="mobile-nav-link">Sobre mí</a>
+      <a href="#contacto" class="mobile-nav-link">Contacto</a>
+    </div>
+    <div class="mobile-menu__footer">
+      <a href="#contacto" class="btn btn--primary btn--block mobile-nav-link">Solicitar presupuesto</a>
+    </div>
+  </nav>
+
+
+  <main>
+    <!-- ============================================ -->
+    <!-- HERO / PRESENTACIÓN                         -->
+    <!-- ============================================ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content" data-animate>
+          <h1 class="hero__title">Transformo ideas y negocios en experiencias digitales.</h1>
+          <p class="hero__subtitle">Desarrollo sitios web, tiendas online y sistemas de pedidos personalizados para comercios que quieren crecer y mejorar su presencia digital.</p>
+          <div class="hero__actions">
+            <a href="#proyectos" class="btn btn--primary">Conocé mis proyectos</a>
+            <a href="#contacto" class="btn btn--outline">Hablemos de tu proyecto</a>
+          </div>
+        </div>
+        <div class="hero__visual" data-animate>
+          <div class="hero__graphic">
+            <!-- Composición gráfica con CSS -->
+            <div class="hero__device hero__device--desktop">
+              <div class="hero__device-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="hero__device-screen">
+                <div class="hero__mock-header"></div>
+                <div class="hero__mock-hero"></div>
+                <div class="hero__mock-grid">
+                  <div></div><div></div><div></div>
+                </div>
+              </div>
+            </div>
+            <div class="hero__device hero__device--mobile">
+              <div class="hero__device-notch"></div>
+              <div class="hero__device-screen">
+                <div class="hero__mock-header"></div>
+                <div class="hero__mock-card"></div>
+                <div class="hero__mock-card"></div>
+              </div>
+            </div>
+            <div class="hero__float hero__float--code">&lt;/&gt;</div>
+            <div class="hero__float hero__float--cart">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            </div>
+            <div class="hero__float hero__float--globe">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SERVICIOS                                    -->
+    <!-- ============================================ -->
+    <section class="section services" id="servicios">
+      <div class="container">
+        <div class="section__header" data-animate>
+          <span class="section__tag">Servicios</span>
+          <h2 class="section__title">Soluciones digitales para tu negocio</h2>
+          <p class="section__subtitle">Cada proyecto se desarrolla a medida, según las necesidades y los objetivos de cada comercio.</p>
+        </div>
+
+        <div class="services__grid">
+          <!-- Servicio 1 -->
+          <article class="service-card" data-animate>
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="service-card__title">Páginas web comerciales</h3>
+            <p class="service-card__desc">Sitios institucionales, páginas informativas y catálogos digitales personalizados para presentar tu negocio en Internet.</p>
+            <ul class="service-card__benefits">
+              <li>Diseño profesional y adaptable a celulares</li>
+              <li>Información del negocio, productos y servicios</li>
+              <li>Acceso directo a WhatsApp y redes sociales</li>
+              <li>Optimización para buscadores (SEO)</li>
+            </ul>
+          </article>
+
+          <!-- Servicio 2 -->
+          <article class="service-card" data-animate>
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            </div>
+            <h3 class="service-card__title">Tiendas online</h3>
+            <p class="service-card__desc">Catálogos de productos, categorías, variantes y paneles de administración para gestionar tu comercio de forma digital.</p>
+            <ul class="service-card__benefits">
+              <li>Catálogo organizado por categorías</li>
+              <li>Gestión de productos e imágenes</li>
+              <li>Panel de administración</li>
+              <li>Publicación en servidor propio</li>
+            </ul>
+          </article>
+
+          <!-- Servicio 3 -->
+          <article class="service-card" data-animate>
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="service-card__title">Sistemas de pedidos online</h3>
+            <p class="service-card__desc">Aplicaciones para facilitar la selección de productos, la gestión de pedidos y la comunicación con tus clientes.</p>
+            <ul class="service-card__benefits">
+              <li>Selección de productos, variantes y cantidades</li>
+              <li>Carrito de compras funcional</li>
+              <li>Integración con WhatsApp</li>
+              <li>Adaptado a las necesidades del negocio</li>
+            </ul>
+          </article>
+
+          <!-- Servicio 4 -->
+          <article class="service-card" data-animate>
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <h3 class="service-card__title">Alojamiento y mantenimiento</h3>
+            <p class="service-card__desc">Publicación de sitios web, alojamiento administrado, supervisión de disponibilidad, copias de seguridad y corrección de errores.</p>
+            <ul class="service-card__benefits">
+              <li>Publicación en servidor</li>
+              <li>Configuración de dominio y HTTPS</li>
+              <li>Copias de seguridad periódicas</li>
+              <li>Asistencia técnica continua</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- PROYECTOS                                    -->
+    <!-- ============================================ -->
+    <section class="section projects" id="proyectos">
+      <div class="container">
+        <div class="section__header" data-animate>
+          <span class="section__tag">Portfolio</span>
+          <h2 class="section__title">Proyectos destacados</h2>
+          <p class="section__subtitle">Algunos de los proyectos en los que trabajé, diseñados para resolver necesidades concretas de cada negocio.</p>
+        </div>
+
+        <div class="projects__grid" id="projects-grid">
+          <!-- Las tarjetas se generan dinámicamente desde projects.js + config.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- PROCESO DE TRABAJO                           -->
+    <!-- ============================================ -->
+    <section class="section process" id="proceso">
+      <div class="container">
+        <div class="section__header" data-animate>
+          <span class="section__tag">Proceso</span>
+          <h2 class="section__title">¿Cómo trabajo?</h2>
+          <p class="section__subtitle">Cada proyecto sigue un proceso organizado para garantizar resultados claros y profesionales.</p>
+        </div>
+
+        <div class="process__timeline">
+          <article class="process__step" data-animate>
+            <div class="process__number">01</div>
+            <div class="process__body">
+              <h3 class="process__title">Contacto inicial</h3>
+              <p class="process__desc">Conocemos el negocio y sus necesidades. Analizamos juntos las posibilidades para encontrar la mejor solución.</p>
+            </div>
+          </article>
+
+          <article class="process__step" data-animate>
+            <div class="process__number">02</div>
+            <div class="process__body">
+              <h3 class="process__title">Planificación</h3>
+              <p class="process__desc">Definimos las funcionalidades, el diseño y el alcance del proyecto antes de empezar a desarrollar.</p>
+            </div>
+          </article>
+
+          <article class="process__step" data-animate>
+            <div class="process__number">03</div>
+            <div class="process__body">
+              <h3 class="process__title">Desarrollo</h3>
+              <p class="process__desc">Construyo una solución personalizada según los requerimientos acordados, con código limpio y buenas prácticas.</p>
+            </div>
+          </article>
+
+          <article class="process__step" data-animate>
+            <div class="process__number">04</div>
+            <div class="process__body">
+              <h3 class="process__title">Publicación</h3>
+              <p class="process__desc">Configuramos el alojamiento, el dominio y dejamos el sitio disponible en Internet, listo para funcionar.</p>
+            </div>
+          </article>
+
+          <article class="process__step" data-animate>
+            <div class="process__number">05</div>
+            <div class="process__body">
+              <h3 class="process__title">Mantenimiento</h3>
+              <p class="process__desc">Ofrezco soporte técnico, copias de seguridad y corrección de errores según el servicio contratado.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SOBRE MÍ                                     -->
+    <!-- ============================================ -->
+    <section class="section about" id="sobre-mi">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content" data-animate>
+            <span class="section__tag">Sobre mí</span>
+            <h2 class="about__title">Detrás de cada proyecto, hay una solución pensada para cada negocio.</h2>
+            <div class="about__text">
+              <p>Soy Nahuel Vega, estudiante de Analista en Sistemas Informáticos y desarrollador de proyectos web.</p>
+              <p>Me interesa combinar tecnología, diseño y funcionalidad para crear herramientas digitales que respondan a las necesidades reales de cada negocio.</p>
+              <p>A través de proyectos propios y desarrollos personalizados, trabajo en la creación de tiendas online, sitios comerciales y sistemas de pedidos.</p>
+              <p>Mi objetivo es ayudar a los comercios a fortalecer su presencia digital mediante soluciones prácticas, adaptables y preparadas para crecer.</p>
+            </div>
+          </div>
+          <div class="about__skills" data-animate>
+            <h3 class="about__skills-title">Tecnologías y herramientas</h3>
+            <div class="skills__grid">
+              <div class="skill-item">
+                <span class="skill-item__name">HTML5</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">CSS3</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Node.js</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Express</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">MySQL</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Git</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Responsive Design</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Servidores & Deploy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- ALOJAMIENTO Y MANTENIMIENTO                  -->
+    <!-- ============================================ -->
+    <section class="section hosting" id="alojamiento">
+      <div class="container">
+        <div class="hosting__inner">
+          <div class="hosting__content" data-animate>
+            <span class="section__tag">Alojamiento</span>
+            <h2 class="section__title">Tu sitio web siempre disponible</h2>
+            <p class="hosting__intro">No solamente desarrollo páginas web: también puedo ocuparme de su publicación, alojamiento y mantenimiento técnico para que puedas enfocarte en tu negocio.</p>
+
+            <div class="hosting__features">
+              <div class="hosting__feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Alojamiento de sitios web en servidor</span>
+              </div>
+              <div class="hosting__feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Configuración de dominios y HTTPS</span>
+              </div>
+              <div class="hosting__feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Supervisión de disponibilidad</span>
+              </div>
+              <div class="hosting__feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Copias de seguridad periódicas</span>
+              </div>
+              <div class="hosting__feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Corrección de errores</span>
+              </div>
+              <div class="hosting__feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Asistencia técnica relacionada con el sitio</span>
+              </div>
+            </div>
+
+            <div class="hosting__note">
+              <p>El mantenimiento se contrata mediante un abono mensual. Las nuevas funcionalidades, rediseños y modificaciones importantes se presupuestan por separado.</p>
+            </div>
+
+            <a href="#contacto" class="btn btn--primary">Consultá por mantenimiento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- CONTACTO                                      -->
+    <!-- ============================================ -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__info" data-animate>
+            <span class="section__tag">Contacto</span>
+            <h2 class="contact__title">¿Tenés un proyecto en mente?</h2>
+            <p class="contact__text">Contame sobre tu negocio y qué necesitás. Podemos encontrar una solución digital adaptada a tus objetivos.</p>
+            
+            <div class="contact__methods">
+              <a href="https://wa.me/5491158708358" target="_blank" rel="noopener noreferrer" class="contact__method">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <div>
+                  <span class="contact__method-label">WhatsApp</span>
+                  <span class="contact__method-value">+54 11 5870-8358</span>
+                </div>
+              </a>
+              <a href="mailto:anahuuelvega@gmail.com" class="contact__method">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <div>
+                  <span class="contact__method-label">Correo electrónico</span>
+                  <span class="contact__method-value">anahuuelvega@gmail.com</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact__form-wrapper" data-animate>
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="field-name" class="form-label">Nombre <span class="required">*</span></label>
+                <input type="text" id="field-name" name="name" class="form-input" placeholder="Tu nombre" required autocomplete="name">
+                <span class="form-error" hidden></span>
+              </div>
+
+              <div class="form-group">
+                <label for="field-business" class="form-label">Comercio o emprendimiento</label>
+                <input type="text" id="field-business" name="business" class="form-input" placeholder="Nombre de tu negocio (opcional)" autocomplete="organization">
+                <span class="form-error" hidden></span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="field-email" class="form-label">Correo electrónico <span class="required">*</span></label>
+                  <input type="email" id="field-email" name="email" class="form-input" placeholder="tu@email.com" required autocomplete="email">
+                  <span class="form-error" hidden></span>
+                </div>
+                <div class="form-group">
+                  <label for="field-phone" class="form-label">WhatsApp <span class="required">*</span></label>
+                  <input type="tel" id="field-phone" name="phone" class="form-input" placeholder="+54 11 1234-5678" required autocomplete="tel">
+                  <span class="form-error" hidden></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="field-project-type" class="form-label">Tipo de proyecto <span class="required">*</span></label>
+                <select id="field-project-type" name="project-type" class="form-input form-select" required>
+                  <option value="" disabled selected>Seleccioná una opción</option>
+                  <option value="Página web comercial">Página web comercial</option>
+                  <option value="Tienda online">Tienda online</option>
+                  <option value="Sistema de pedidos">Sistema de pedidos</option>
+                  <option value="Rediseño de una página existente">Rediseño de una página existente</option>
+                  <option value="Alojamiento y mantenimiento">Alojamiento y mantenimiento</option>
+                  <option value="Otro">Otro</option>
+                </select>
+                <span class="form-error" hidden></span>
+              </div>
+
+              <div class="form-group">
+                <label for="field-message" class="form-label">Contanos sobre tu proyecto <span class="required">*</span></label>
+                <textarea id="field-message" name="message" class="form-input form-textarea" placeholder="¿Qué necesitás? Contanos brevemente sobre tu negocio y lo que te gustaría lograr." rows="5" required></textarea>
+                <span class="form-error" hidden></span>
+              </div>
+
+              <div id="form-status" class="form-status" hidden></div>
+
+              <button type="submit" class="btn btn--primary btn--block">
+                Enviar por WhatsApp
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ============================================ -->
+  <!-- FOOTER                                        -->
+  <!-- ============================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">NAHUEL VEGA</span>
+        <span class="footer__role">Desarrollo Web</span>
+        <p class="footer__tagline">Soluciones digitales para comercios y negocios.</p>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__heading">Navegación</h4>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__heading">Servicios</h4>
+        <a href="#servicios">Páginas web</a>
+        <a href="#servicios">Tiendas online</a>
+        <a href="#servicios">Sistemas de pedidos</a>
+        <a href="#alojamiento">Alojamiento</a>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__heading">Contacto</h4>
+        <a href="https://wa.me/5491158708358" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="mailto:anahuuelvega@gmail.com">anahuuelvega@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="current-year"></span> Nahuel Vega. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================ -->
+  <!-- BOTÓN FLOTANTE WHATSAPP                       -->
+  <!-- ============================================ -->
+  <a href="#" class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+
+  <!-- ============================================ -->
+  <!-- MODAL / LIGHTBOX DE VIDEO EN PRIMER PLANO    -->
+  <!-- ============================================ -->
+  <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Reproductor de video en primer plano" aria-hidden="true">
+    <div class="video-modal__backdrop" id="video-modal-backdrop"></div>
+    <div class="video-modal__container">
+      <div class="video-modal__dialog">
+        <!-- Barra superior del modal -->
+        <div class="video-modal__header">
+          <div class="video-modal__info">
+            <span class="video-modal__badge">Demostración en video</span>
+            <h3 class="video-modal__title" id="video-modal-title">Nombre del Proyecto</h3>
+          </div>
+          <button class="video-modal__close" id="video-modal-close" type="button" aria-label="Cerrar video (Escape)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            <span class="video-modal__close-hint">Esc</span>
+          </button>
+        </div>
+
+        <!-- Visor del video centrado -->
+        <div class="video-modal__media">
+          <video
+            id="video-modal-player"
+            class="video-modal__player"
+            playsinline
+            muted
+            preload="auto"
+          >
+            Tu navegador no soporta la reproducción de video HTML5.
+          </video>
+
+          <!-- Botón central grande para Play/Pausa -->
+          <button class="video-modal__center-play" id="video-modal-center-play" type="button" aria-label="Reproducir o pausar video">
+            <span class="video-modal__center-icon">
+              <svg class="modal-center-play-icon" width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="6 3 20 12 6 21 6 3"/>
+              </svg>
+              <svg class="modal-center-pause-icon" width="36" height="36" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                <rect x="6" y="4" width="4" height="16" rx="1"/>
+                <rect x="14" y="4" width="4" height="16" rx="1"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <!-- Barra de controles inferior -->
+        <div class="video-modal__controls" role="toolbar" aria-label="Controles del reproductor">
+          <button class="video-modal__ctrl-btn" id="video-modal-play-btn" type="button" aria-label="Reproducir o pausar">
+            <svg class="modal-ctrl-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="6 3 20 12 6 21 6 3"/>
+            </svg>
+            <svg class="modal-ctrl-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+              <rect x="6" y="4" width="4" height="16" rx="1"/>
+              <rect x="14" y="4" width="4" height="16" rx="1"/>
+            </svg>
+          </button>
+
+          <!-- Barra de tiempo / Scrubbing -->
+          <div class="video-modal__progress-wrap" id="video-modal-progress" role="progressbar" aria-label="Línea de tiempo del video" tabindex="0">
+            <div class="video-modal__progress-bar" id="video-modal-progress-bar">
+              <span class="video-modal__progress-scrubber"></span>
+            </div>
+          </div>
+
+          <!-- Tiempo actual y duración -->
+          <div class="video-modal__time">
+            <span id="video-modal-current">0:00</span> / <span id="video-modal-duration">0:00</span>
+          </div>
+
+          <!-- Acciones secundarias -->
+          <div class="video-modal__extras">
+            <span class="video-modal__mute-tag" title="Grabación optimizada sin sonido">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                <line x1="23" y1="9" x2="17" y2="15"/>
+                <line x1="17" y1="9" x2="23" y2="15"/>
+              </svg>
+              <span>Sin sonido</span>
+            </span>
+
+            <button class="video-modal__ctrl-btn video-modal__ctrl-btn--fs" id="video-modal-fs-btn" type="button" aria-label="Alternar pantalla completa" title="Pantalla completa">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 3 21 3 21 9"/>
+                <polyline points="9 21 3 21 3 15"/>
+                <line x1="21" y1="3" x2="14" y2="10"/>
+                <line x1="3" y1="21" x2="10" y2="14"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
